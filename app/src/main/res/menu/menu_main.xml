@@ -1,0 +1,87 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- Este es el menu principal, y es el icono de menu que esta en la derecha del toolBar -->
+
+    <!-- En app:showAsAction="never", si ponemos never, le decimos que no aparezca tambien el icono en la barra,
+    y solo va a aparecer dentro del icono de menu de la derecha
+    Si ponemos ifRoom, si va a aparecer en la barra pero no dentro del icono
+    Mas comandos:
+
+     android:showAsAction=["ifRoom" | "never" | "withText" | "always" | "collapseActionView"]
+    -->
+
+    <!-- Aqui añado un boton llamado Mis datos y va a aparecer en el toolbar fuera del icono de la derecha,
+      , y dentro de el hay varios submenus-->
+
+
+    <item
+        android:id="@+id/mis_datos"
+        android:icon="@drawable/baseline_touch_app_white_18dp"
+        android:title="Mis datos"
+        app:showAsAction="always">
+
+        <!--Submenus-->
+        <menu>
+            <item
+                android:id="@+id/about_toolbar"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:tint="#ff5733"
+                android:title="About"
+                />
+            <item
+                android:id="@+id/estudios_toolbar"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_bookmark_border_black_24dp"
+                android:tint="#ff5733"
+                android:title="Estudios"
+                />
+
+
+        </menu>
+    </item>
+
+
+    <!-- Aqui añado un boton llamado Mis datos que va a aparecer dentro del menú de la derecha,
+     , y dentro de el varios submenus-->
+
+
+    <item
+        android:id="@+id/mis_datos_main"
+        android:title="Mis datos">
+
+        <!--Submenus-->
+        <menu>
+            <item
+                android:id="@+id/about_main"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:tint="#ff5733"
+                android:title="About"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/estudios2_main"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:tint="#ff5733"
+                android:title="Estudios"
+                app:showAsAction="never"/>
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+
+</menu>

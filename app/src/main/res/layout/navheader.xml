@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Menu desplegable que se abre pinchando en el icono de menu de la izquierda del toolbar -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navheader_height"
+    android:background="@drawable/d"
+    android:orientation="vertical"
+    >
+
+    <!-- Aqui añado un Titulo al menu que se ve cuando se despliega el menu drawble-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sitios_del_mundo"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="10dp" />
+
+
+</LinearLayout>
+
+
+
+

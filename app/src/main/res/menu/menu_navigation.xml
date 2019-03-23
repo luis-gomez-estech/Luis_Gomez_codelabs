@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- AQUI AÑADIMOS BOTONES AL MENU -->
+    <group android:checkableBehavior="single">
+
+        <!--  Este es el icono de menu que esta en la izquierda del toolBar  y añado un boton llamado Mi perfil -->
+
+        <item
+            android:icon="@drawable/ic_home_black_24dp"
+            android:tint="@color/button_grey"
+            android:title="One" />
+        <item
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:tint="@color/button_grey"
+            android:title="Two" />
+        <item
+            android:icon="@drawable/ic_bookmark_border_black_24dp"
+            android:tint="@color/button_grey"
+            android:title="Three" />
+
+
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/fb"
+                android:icon="@drawable/linkedin_icon"
+                android:title="Faacebook" />
+            <item
+                android:id="@+id/gplus"
+                android:icon="@drawable/email_icon"
+                android:title="Google +" />
+            <item
+                android:id="@+id/twitter"
+                android:icon="@drawable/twitter_icon"
+                android:title="Twitter" />
+
+            <item
+                android:id="@+id/github"
+                android:icon="@drawable/github_icon"
+                android:title="Github" />
+        </menu>
+    </item>
+
+</menu>
